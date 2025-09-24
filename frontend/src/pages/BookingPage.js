@@ -182,22 +182,22 @@ const BookingPage = () => {
               <CardContent className="p-8">
                 {/* Step 1: Trip Details */}
                 {currentStep === 1 && (
-                  <div className="space-y-6">
+                  <div className="space-y-8">
                     {/* Location Selection */}
                     <div>
-                      <Label className="text-base font-semibold mb-3 block">Pickup Location</Label>
+                      <Label className="text-xl font-semibold mb-4 block">Pickup Location</Label>
                       <Select value={selectedLocation} onValueChange={setSelectedLocation}>
-                        <SelectTrigger>
+                        <SelectTrigger className="h-14 text-lg">
                           <SelectValue placeholder="Select airport location" />
                         </SelectTrigger>
                         <SelectContent>
                           {mockLocations.map((location) => (
                             <SelectItem key={location.id} value={location.id.toString()}>
                               <div className="flex items-center">
-                                <MapPin className="h-4 w-4 mr-2" />
+                                <MapPin className="h-5 w-5 mr-3" />
                                 {location.name} ({location.code})
                                 {!location.available && (
-                                  <Badge variant="secondary" className="ml-2">Unavailable</Badge>
+                                  <Badge variant="secondary" className="ml-3">Unavailable</Badge>
                                 )}
                               </div>
                             </SelectItem>
@@ -205,13 +205,13 @@ const BookingPage = () => {
                         </SelectContent>
                       </Select>
                       {selectedLocationData && (
-                        <div className="mt-2 p-3 bg-blue-50 rounded-lg">
-                          <p className="text-sm text-blue-800">
+                        <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-pink-50 rounded-xl border border-blue-200">
+                          <p className="text-lg text-blue-800">
                             <strong>Location:</strong> {selectedLocationData.terminal}
                           </p>
-                          <div className="flex items-center justify-between mt-2">
-                            <span className="text-sm text-blue-600">Available Inventory:</span>
-                            <div className="flex space-x-4 text-sm">
+                          <div className="flex items-center justify-between mt-3">
+                            <span className="text-lg text-blue-600">Available Inventory:</span>
+                            <div className="flex space-x-6 text-lg">
                               <span>Wayb Pico: {selectedLocationData.inventory.wayb_pico}</span>
                               <span>Ridesafer Vest: {selectedLocationData.inventory.ridesafer_vest}</span>
                             </div>
