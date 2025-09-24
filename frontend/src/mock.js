@@ -182,7 +182,7 @@ export const mockPricingPlans = [
   },
   {
     name: 'Cleaning Fee',
-    price: 9.95,
+    price: 7.95,
     period: 'per rental',
     features: [
       'Professional sanitization',
