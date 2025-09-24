@@ -212,9 +212,8 @@ const BookingPage = () => {
                           <div className="flex items-center justify-between mt-2">
                             <span className="text-sm text-blue-600">Available Inventory:</span>
                             <div className="flex space-x-4 text-sm">
-                              <span>Toddler: {selectedLocationData.inventory.toddler}</span>
-                              <span>Booster: {selectedLocationData.inventory.booster}</span>
-                              <span>Convertible: {selectedLocationData.inventory.convertible}</span>
+                              <span>Wayb Pico: {selectedLocationData.inventory.wayb_pico}</span>
+                              <span>Ridesafer Vest: {selectedLocationData.inventory.ridesafer_vest}</span>
                             </div>
                           </div>
                         </div>
