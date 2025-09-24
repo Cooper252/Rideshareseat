@@ -61,48 +61,48 @@ const HomePage = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-indigo-100 py-20 lg:py-28">
-        <div className="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <Badge variant="secondary" className="mb-4 bg-blue-100 text-blue-800 px-4 py-1">
-              <Award className="h-4 w-4 mr-2" />
+      <section className="relative bg-gradient-to-br from-pink-50 via-blue-50 to-yellow-50 py-24 lg:py-32">
+        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm"></div>
+        <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="text-center max-w-5xl mx-auto">
+            <Badge variant="secondary" className="mb-6 bg-yellow-200 text-pink-800 px-6 py-2 text-lg">
+              <Award className="h-5 w-5 mr-3" />
               Trusted by 50,000+ Families
             </Badge>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
               Travel Smarter with
-              <span className="text-blue-600 block">Portable Car Seats</span>
+              <span className="bg-gradient-to-r from-pink-600 via-blue-600 to-yellow-600 bg-clip-text text-transparent block">Portable Car Seats</span>
             </h1>
             
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
               Skip expensive car rentals and travel freely with your children. Rent premium car seats from airport kiosks and use rideshares, taxis, or public transport with complete peace of mind.
             </p>
             
-            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4" asChild>
+            <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+              <Button size="lg" className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white text-xl px-10 py-6 shadow-lg" asChild>
                 <Link to="/book">
                   Book Now - Starting $9.95/day
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-3 h-6 w-6" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4" asChild>
+              <Button variant="outline" size="lg" className="text-xl px-10 py-6 border-2 border-blue-500 text-blue-600 hover:bg-blue-50" asChild>
                 <Link to="/locations">View Locations</Link>
               </Button>
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-500">
+            <div className="flex flex-wrap justify-center items-center gap-8 text-lg text-gray-600">
               <div className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
                 <span>Safety Certified</span>
               </div>
               <div className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
                 <span>Fully Insured</span>
               </div>
               <div className="flex items-center">
-                <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
                 <span>24/7 Support</span>
               </div>
             </div>
