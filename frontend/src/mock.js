@@ -9,8 +9,8 @@ export const mockLocations = [
     terminal: "Terminal 1 - Baggage Claim",
     available: true,
     inventory: {
-      wayb_pico: 12,
-      ridesafer_vest: 15
+      wayb_pico: 175,
+      ridesafer_vest: 200
     },
     coordinates: { lat: 33.9425, lng: -118.4081 }
   },
@@ -22,8 +22,8 @@ export const mockLocations = [
     terminal: "Terminal 4 - Baggage Claim",
     available: true,
     inventory: {
-      wayb_pico: 8,
-      ridesafer_vest: 18
+      wayb_pico: 160,
+      ridesafer_vest: 185
     },
     coordinates: { lat: 40.6413, lng: -73.7781 }
   },
@@ -35,8 +35,8 @@ export const mockLocations = [
     terminal: "Terminal 3 - Baggage Claim",
     available: true,
     inventory: {
-      wayb_pico: 14,
-      ridesafer_vest: 12
+      wayb_pico: 190,
+      ridesafer_vest: 165
     },
     coordinates: { lat: 37.6213, lng: -122.3790 }
   },
@@ -48,8 +48,8 @@ export const mockLocations = [
     terminal: "Terminal D - Baggage Claim",
     available: true,
     inventory: {
-      wayb_pico: 10,
-      ridesafer_vest: 14
+      wayb_pico: 155,
+      ridesafer_vest: 180
     },
     coordinates: { lat: 25.7617, lng: -80.1918 }
   },
@@ -59,10 +59,10 @@ export const mockLocations = [
     code: "ORD",
     address: "10000 W O'Hare Ave, Chicago, IL 60666",
     terminal: "Terminal 1 - Baggage Claim",
-    available: false,
+    available: true,
     inventory: {
-      wayb_pico: 0,
-      ridesafer_vest: 0
+      wayb_pico: 170,
+      ridesafer_vest: 150
     },
     coordinates: { lat: 41.9742, lng: -87.9073 }
   }
