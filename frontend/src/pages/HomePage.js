@@ -16,7 +16,7 @@ import {
   Award,
   Zap
 } from 'lucide-react';
-import { mockTestimonials, mockPricingPlans } from '../mock';
+import { mockTestimonials, mockPricingPlans, mockSeatTypes } from '../mock';
 
 const HomePage = () => {
   const features = [
