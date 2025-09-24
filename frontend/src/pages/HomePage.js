@@ -158,8 +158,76 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Product Showcase Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-6">
+              Our Premium Car Seats
+            </h2>
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto font-body">
+              Choose from our carefully selected, safety-certified car seats designed for modern families on the move.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {mockSeatTypes.map((seat, index) => (
+              <Card key={seat.id} className="border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden bg-white">
+                <div className="aspect-w-16 aspect-h-12 bg-gradient-to-br from-pink-50 to-blue-50">
+                  <img 
+                    src={seat.image} 
+                    alt={seat.name}
+                    className="w-full h-72 object-cover"
+                  />
+                </div>
+                <CardContent className="p-8">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-3xl font-bold font-heading text-gray-900">{seat.name}</h3>
+                    <Badge className="bg-gradient-to-r from-yellow-400 to-pink-500 text-white text-lg px-4 py-2 font-accent">
+                      ${seat.daily_rate}/day
+                    </Badge>
+                  </div>
+                  
+                  <p className="text-lg text-gray-600 mb-4 font-body">{seat.description}</p>
+                  
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div className="text-center p-4 bg-gradient-to-r from-pink-50 to-blue-50 rounded-lg">
+                      <div className="text-lg font-bold font-accent text-gray-900">{seat.age_range}</div>
+                      <div className="text-sm text-gray-600">Age Range</div>
+                    </div>
+                    <div className="text-center p-4 bg-gradient-to-r from-blue-50 to-yellow-50 rounded-lg">
+                      <div className="text-lg font-bold font-accent text-gray-900">{seat.weight_range}</div>
+                      <div className="text-sm text-gray-600">Weight Range</div>
+                    </div>
+                  </div>
+
+                  <div className="mb-6">
+                    <h4 className="text-xl font-semibold font-heading text-gray-900 mb-3">Key Features:</h4>
+                    <ul className="grid grid-cols-1 gap-2">
+                      {seat.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-center font-body">
+                          <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
+                          <span className="text-gray-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <Button size="lg" className="w-full bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white font-accent font-semibold" asChild>
+                    <Link to="/book">
+                      Rent {seat.name}
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-gradient-to-r from-blue-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div>
