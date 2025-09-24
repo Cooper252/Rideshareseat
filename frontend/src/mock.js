@@ -64,7 +64,7 @@ export const mockSeatTypes = [
     age_range: '1-4 years',
     daily_rate: 14.95,
     features: ['Ultra-compact fold', 'FAA approved for airplanes', 'Weighs only 8 lbs', '5-point harness', 'Easy installation'],
-    image: 'https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=300&fit=crop'
+    image: 'https://images.unsplash.com/photo-1516309229383-2001fee59b2b?w=400&h=300&fit=crop'
   },
   {
     id: 'ridesafer_vest',
@@ -74,7 +74,7 @@ export const mockSeatTypes = [
     age_range: '5+ years',
     daily_rate: 9.95,
     features: ['Wearable safety vest', 'No installation required', 'Works in any vehicle', 'Compact storage', 'FMVSS 213 certified'],
-    image: 'https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=300&fit=crop'
+    image: 'https://images.unsplash.com/photo-1622612023350-b15f063eabe6?w=400&h=300&fit=crop'
   }
 ];
 
