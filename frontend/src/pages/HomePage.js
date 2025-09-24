@@ -21,6 +21,11 @@ import { mockTestimonials, mockPricingPlans, mockSeatTypes } from '../mock';
 const HomePage = () => {
   const features = [
     {
+      icon: <DollarSign className="h-10 w-10 text-green-600" />,
+      title: 'Massive Savings',
+      description: 'Save an average of $382 per trip compared to traditional car rentals. Our affordable daily rates make family travel budget-friendly.'
+    },
+    {
       icon: <Shield className="h-10 w-10 text-pink-600" />,
       title: 'Safety First',
       description: 'All car seats meet or exceed federal safety standards with professional cleaning and inspection between each rental.'
@@ -29,11 +34,6 @@ const HomePage = () => {
       icon: <Clock className="h-10 w-10 text-blue-600" />,
       title: 'Instant Pickup',
       description: 'Skip the rental car lines. Pick up your car seat from our smart kiosks in airport baggage claim areas.'
-    },
-    {
-      icon: <DollarSign className="h-10 w-10 text-yellow-600" />,
-      title: 'Save Money',
-      description: 'Starting at just $9.95/day - significantly less expensive than traditional car rental with car seat options.'
     },
     {
       icon: <MapPin className="h-10 w-10 text-pink-600" />,
