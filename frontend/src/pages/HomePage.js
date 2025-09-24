@@ -80,30 +80,30 @@ const HomePage = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
-              <Button size="lg" className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white text-xl px-10 py-6 shadow-lg" asChild>
+              <Button size="lg" className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white text-xl px-10 py-6 shadow-lg font-accent font-semibold" asChild>
                 <Link to="/book">
                   Book Now - Starting $9.95/day
                   <ArrowRight className="ml-3 h-6 w-6" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" className="text-xl px-10 py-6 border-2 border-blue-500 text-blue-600 hover:bg-blue-50" asChild>
+              <Button variant="outline" size="lg" className="text-xl px-10 py-6 border-2 border-blue-500 text-blue-600 hover:bg-blue-50 font-accent font-medium" asChild>
                 <Link to="/locations">View Locations</Link>
               </Button>
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center items-center gap-8 text-lg text-gray-600">
+            <div className="flex flex-wrap justify-center items-center gap-8 text-lg text-gray-600 font-body">
               <div className="flex items-center">
                 <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
-                <span>Safety Certified</span>
+                <span className="font-medium">Safety Certified</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
-                <span>Fully Insured</span>
+                <span className="font-medium">Fully Insured</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
-                <span>24/7 Support</span>
+                <span className="font-medium">24/7 Support</span>
               </div>
             </div>
           </div>
