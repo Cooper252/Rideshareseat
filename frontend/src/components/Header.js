@@ -113,16 +113,16 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 py-4">
-            <nav className="space-y-2">
+          <div className="md:hidden border-t border-pink-200 py-6">
+            <nav className="space-y-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                  className={`block px-4 py-3 text-lg font-semibold rounded-lg transition-colors ${
                     isActive(item.href)
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
+                      ? 'text-pink-600 bg-pink-50'
+                      : 'text-gray-700 hover:text-pink-600 hover:bg-pink-50'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -131,35 +131,35 @@ const Header = () => {
               ))}
             </nav>
             
-            <div className="mt-4 pt-4 border-t border-gray-200">
+            <div className="mt-6 pt-6 border-t border-pink-200">
               {isAuthenticated ? (
-                <div className="space-y-2">
+                <div className="space-y-4">
                   <Link
                     to="/dashboard"
-                    className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+                    className="block px-4 py-3 text-lg font-semibold text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-lg"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Dashboard
                   </Link>
                   <button
                     onClick={handleLogout}
-                    className="block w-full text-left px-3 py-2 text-sm font-medium text-red-600 hover:bg-red-50 rounded-md"
+                    className="block w-full text-left px-4 py-3 text-lg font-semibold text-red-600 hover:bg-red-50 rounded-lg"
                   >
                     Sign Out
                   </button>
                 </div>
               ) : (
-                <div className="space-y-2">
+                <div className="space-y-4">
                   <Link
                     to="/login"
-                    className="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md"
+                    className="block px-4 py-3 text-lg font-semibold text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-lg"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Sign In
                   </Link>
                   <Link
                     to="/signup"
-                    className="block px-3 py-2 text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 rounded-md text-center"
+                    className="block px-4 py-3 text-lg font-semibold bg-gradient-to-r from-pink-500 to-blue-500 text-white hover:from-pink-600 hover:to-blue-600 rounded-lg text-center"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Sign Up
