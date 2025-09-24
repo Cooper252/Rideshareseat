@@ -175,11 +175,11 @@ const BookingPage = () => {
         </div>
 
         {/* Step Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main Content */}
           <div className="lg:col-span-2">
-            <Card>
-              <CardContent className="p-6">
+            <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-8">
                 {/* Step 1: Trip Details */}
                 {currentStep === 1 && (
                   <div className="space-y-6">
