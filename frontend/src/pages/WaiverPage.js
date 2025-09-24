@@ -6,7 +6,7 @@ import { ScrollArea } from '../components/ui/scroll-area';
 import { Separator } from '../components/ui/separator';
 import { Badge } from '../components/ui/badge';
 import { useAuth } from '../context/AuthContext';
-import { Shield, AlertTriangle, FileText, CheckCircle, Download, Print } from 'lucide-react';
+import { Shield, AlertTriangle, FileText, CheckCircle, Download, Printer } from 'lucide-react';
 import { toast } from 'sonner';
 import { format } from 'date-fns';
 
