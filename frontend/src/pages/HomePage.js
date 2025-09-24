@@ -65,17 +65,17 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-white/40 backdrop-blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-5xl mx-auto">
-            <Badge variant="secondary" className="mb-6 bg-yellow-200 text-pink-800 px-6 py-2 text-lg">
+            <Badge variant="secondary" className="mb-6 bg-yellow-200 text-pink-800 px-6 py-2 text-lg font-accent font-semibold">
               <Award className="h-5 w-5 mr-3" />
               Trusted by 50,000+ Families
             </Badge>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-gray-900 mb-8 leading-tight">
               Travel Smarter with
               <span className="bg-gradient-to-r from-pink-600 via-blue-600 to-yellow-600 bg-clip-text text-transparent block">Portable Car Seats</span>
             </h1>
             
-            <p className="text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed font-body">
               Skip expensive car rentals and travel freely with your children. Rent premium car seats from airport kiosks and use rideshares, taxis, or public transport with complete peace of mind.
             </p>
             
