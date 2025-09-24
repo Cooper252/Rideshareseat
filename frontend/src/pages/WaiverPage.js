@@ -79,7 +79,7 @@ const WaiverPage = () => {
             Safety Waiver and Liability Agreement
           </h1>
           <p className="text-lg text-gray-600">
-            Please read carefully and sign digitally to proceed with your car seat rental
+            Please read carefully and sign digitally for Wayb Pico (ages 1-4) or Ridesafer Vest (ages 5+) rental
           </p>
         </div>
 
