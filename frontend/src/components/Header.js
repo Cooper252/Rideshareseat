@@ -39,7 +39,7 @@ const Header = () => {
             <div className="bg-gradient-to-r from-pink-500 to-blue-500 p-3 rounded-xl shadow-lg">
               <Car className="h-8 w-8 text-white" />
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text text-transparent">RideShare Seat</span>
+            <span className="text-2xl font-bold font-heading bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text text-transparent">RideShare Seat</span>
           </Link>
 
           {/* Desktop Navigation */}
