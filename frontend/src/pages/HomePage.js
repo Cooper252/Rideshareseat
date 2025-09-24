@@ -21,22 +21,22 @@ import { mockTestimonials, mockPricingPlans } from '../mock';
 const HomePage = () => {
   const features = [
     {
-      icon: <Shield className="h-8 w-8 text-blue-600" />,
+      icon: <Shield className="h-10 w-10 text-pink-600" />,
       title: 'Safety First',
       description: 'All car seats meet or exceed federal safety standards with professional cleaning and inspection between each rental.'
     },
     {
-      icon: <Clock className="h-8 w-8 text-blue-600" />,
+      icon: <Clock className="h-10 w-10 text-blue-600" />,
       title: 'Instant Pickup',
       description: 'Skip the rental car lines. Pick up your car seat from our smart kiosks in airport baggage claim areas.'
     },
     {
-      icon: <DollarSign className="h-8 w-8 text-blue-600" />,
+      icon: <DollarSign className="h-10 w-10 text-yellow-600" />,
       title: 'Save Money',
-      description: 'Starting at just $19.95/day - significantly less expensive than traditional car rental with car seat options.'
+      description: 'Starting at just $9.95/day - significantly less expensive than traditional car rental with car seat options.'
     },
     {
-      icon: <MapPin className="h-8 w-8 text-blue-600" />,
+      icon: <MapPin className="h-10 w-10 text-pink-600" />,
       title: 'Convenient Locations',
       description: 'Available at major airports nationwide with 24/7 kiosk access for maximum flexibility.'
     }
