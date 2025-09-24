@@ -61,30 +61,23 @@ export const mockLocations = [
 
 export const mockSeatTypes = [
   {
-    id: 'toddler',
-    name: 'Toddler Seat',
-    description: 'Perfect for children 2-4 years old (22-65 lbs)',
-    weight_range: '22-65 lbs',
-    age_range: '2-4 years',
-    features: ['5-point harness', 'Side-impact protection', 'Lightweight design', 'Easy installation'],
+    id: 'wayb_pico',
+    name: 'Wayb Pico',
+    description: 'Ultra-portable car seat for children ages 1-4',
+    weight_range: '22-40 lbs',
+    age_range: '1-4 years',
+    daily_rate: 14.95,
+    features: ['Ultra-compact fold', 'FAA approved for airplanes', 'Weighs only 8 lbs', '5-point harness', 'Easy installation'],
     image: 'https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=300&fit=crop'
   },
   {
-    id: 'booster',
-    name: 'Booster Seat',
-    description: 'Ideal for children 4-7 years old (40-100 lbs)',
-    weight_range: '40-100 lbs',
-    age_range: '4-7 years',
-    features: ['Belt-positioning', 'Armrests', 'Cup holders', 'Compact fold'],
-    image: 'https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=300&fit=crop'
-  },
-  {
-    id: 'convertible',
-    name: 'Convertible Seat',
-    description: 'Versatile option for children 2-7 years old (22-100 lbs)',
-    weight_range: '22-100 lbs',
-    age_range: '2-7 years',
-    features: ['Multiple configurations', 'Extended use', 'Premium padding', 'Advanced safety'],
+    id: 'ridesafer_vest',
+    name: 'Ridesafer Vest',
+    description: 'Innovative travel vest for children ages 5 and up',
+    weight_range: '30-100 lbs',
+    age_range: '5+ years',
+    daily_rate: 9.95,
+    features: ['Wearable safety vest', 'No installation required', 'Works in any vehicle', 'Compact storage', 'FMVSS 213 certified'],
     image: 'https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=300&fit=crop'
   }
 ];
