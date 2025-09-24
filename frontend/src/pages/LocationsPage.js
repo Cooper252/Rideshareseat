@@ -17,9 +17,9 @@ const LocationsPage = () => {
   );
 
   const getInventoryStatus = (inventory) => {
-    const total = inventory.toddler + inventory.booster + inventory.convertible;
+    const total = inventory.wayb_pico + inventory.ridesafer_vest;
     if (total === 0) return { status: 'unavailable', text: 'Unavailable', color: 'bg-red-100 text-red-800' };
-    if (total < 5) return { status: 'low', text: 'Low Stock', color: 'bg-yellow-100 text-yellow-800' };
+    if (total < 10) return { status: 'low', text: 'Low Stock', color: 'bg-yellow-100 text-yellow-800' };
     return { status: 'available', text: 'Available', color: 'bg-green-100 text-green-800' };
   };
 
