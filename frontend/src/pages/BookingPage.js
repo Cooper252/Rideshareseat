@@ -268,7 +268,7 @@ const BookingPage = () => {
                     {/* Seat Type Selection */}
                     <div>
                       <Label className="text-base font-semibold mb-3 block">Car Seat Type</Label>
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {mockSeatTypes.map((seat) => (
                           <div
                             key={seat.id}
@@ -282,7 +282,8 @@ const BookingPage = () => {
                             <img src={seat.image} alt={seat.name} className="w-full h-32 object-cover rounded mb-3" />
                             <h3 className="font-semibold text-gray-900 mb-1">{seat.name}</h3>
                             <p className="text-sm text-gray-600 mb-2">{seat.age_range}</p>
-                            <p className="text-xs text-gray-500">{seat.weight_range}</p>
+                            <p className="text-xs text-gray-500 mb-2">{seat.weight_range}</p>
+                            <p className="text-lg font-bold text-blue-600">${seat.daily_rate}/day</p>
                           </div>
                         ))}
                       </div>
