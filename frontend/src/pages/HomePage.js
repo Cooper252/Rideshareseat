@@ -293,22 +293,22 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+      <section className="py-24 bg-gradient-to-r from-pink-600 via-blue-600 to-yellow-500">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10 text-center">
+          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">
             Ready to Transform Your Family Travel?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-2xl text-pink-100 mb-10">
             Join thousands of families who've discovered a better way to travel. Book your car seat rental today.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-4" asChild>
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
+            <Button size="lg" variant="secondary" className="text-xl px-10 py-6 bg-white text-pink-600 hover:bg-gray-100" asChild>
               <Link to="/book">
-                <Zap className="mr-2 h-5 w-5" />
+                <Zap className="mr-3 h-6 w-6" />
                 Book Now
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-blue-600" asChild>
+            <Button size="lg" variant="outline" className="text-xl px-10 py-6 border-2 border-white text-white hover:bg-white hover:text-pink-600" asChild>
               <Link to="/locations">Find Locations</Link>
             </Button>
           </div>
