@@ -128,10 +128,10 @@ const HomePage = () => {
       <section className="py-24 bg-gradient-to-r from-pink-50 to-yellow-50">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center mb-20">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-6">
               Why Choose RideShare Seat?
             </h2>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto">
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto font-body">
               We've revolutionized family travel by making car seat rentals as easy as picking up your luggage.
             </p>
           </div>
