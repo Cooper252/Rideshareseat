@@ -279,8 +279,115 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Cost Comparison Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-6">
+              See How Much You Save
+            </h2>
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto font-body">
+              Compare the real costs of traditional car rentals vs. RideShare Seat for a 3-day family trip
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Traditional Car Rental */}
+            <Card className="border-2 border-red-200 shadow-2xl bg-gradient-to-br from-red-50 to-orange-50">
+              <CardHeader className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-8">
+                <CardTitle className="text-3xl font-bold font-heading text-center">Traditional Car Rental</CardTitle>
+                <p className="text-center text-red-100 text-xl font-body">3-Day Trip Total</p>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center py-3 border-b border-red-200">
+                    <span className="text-lg font-medium font-body">Car Rental ($59.95/day × 3)</span>
+                    <span className="text-lg font-bold">$179.85</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-red-200">
+                    <span className="text-lg font-medium font-body">Rental Insurance ($19.95/day × 3)</span>
+                    <span className="text-lg font-bold">$59.85</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-red-200">
+                    <span className="text-lg font-medium font-body">Car Seat Rental ($14.95/day × 3)</span>
+                    <span className="text-lg font-bold">$44.85</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-red-200">
+                    <span className="text-lg font-medium font-body">Gas (total)</span>
+                    <span className="text-lg font-bold">$40.00</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-red-200">
+                    <span className="text-lg font-medium font-body">Hotel Parking ($45/day × 3)</span>
+                    <span className="text-lg font-bold">$135.00</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-red-200">
+                    <span className="text-lg font-medium font-body">Additional Parking ($20/day × 3)</span>
+                    <span className="text-lg font-bold">$60.00</span>
+                  </div>
+                  <div className="flex justify-between items-center py-6 bg-red-100 rounded-lg px-4 mt-6">
+                    <span className="text-2xl font-bold font-heading text-red-800">Total Cost:</span>
+                    <span className="text-3xl font-bold text-red-600">$519.55</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* RideShare Seat Option */}
+            <Card className="border-2 border-green-200 shadow-2xl bg-gradient-to-br from-green-50 to-blue-50">
+              <CardHeader className="bg-gradient-to-r from-green-500 to-blue-500 text-white p-8">
+                <CardTitle className="text-3xl font-bold font-heading text-center">RideShare Seat</CardTitle>
+                <p className="text-center text-green-100 text-xl font-body">3-Day Trip Total</p>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center py-3 border-b border-green-200">
+                    <span className="text-lg font-medium font-body">Wayb Pico Rental ($14.95/day × 3)</span>
+                    <span className="text-lg font-bold">$44.85</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-green-200">
+                    <span className="text-lg font-medium font-body">Cleaning Fee (one-time)</span>
+                    <span className="text-lg font-bold">$7.95</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-green-200">
+                    <span className="text-lg font-medium font-body">Ubers (4 rides/day × $15 × 3 days)</span>
+                    <span className="text-lg font-bold">$180.00</span>
+                  </div>
+                  <div className="py-8"></div> {/* Spacer to align with the other card */}
+                  <div className="flex justify-between items-center py-6 bg-green-100 rounded-lg px-4 mt-6">
+                    <span className="text-2xl font-bold font-heading text-green-800">Total Cost:</span>
+                    <span className="text-3xl font-bold text-green-600">$232.80</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Savings Highlight */}
+          <div className="mt-12 text-center">
+            <div className="bg-gradient-to-r from-yellow-400 via-pink-500 to-blue-500 p-1 rounded-3xl max-w-2xl mx-auto">
+              <div className="bg-white rounded-3xl p-8">
+                <h3 className="text-4xl font-bold font-heading text-gray-900 mb-4">You Save</h3>
+                <div className="text-6xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-4">
+                  $286.75
+                </div>
+                <p className="text-2xl text-gray-600 font-body">That's a 55% savings on your family travel costs!</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button size="lg" className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white text-xl px-12 py-6 font-accent font-bold shadow-2xl" asChild>
+              <Link to="/book">
+                Start Saving Today
+                <ArrowRight className="ml-3 h-6 w-6" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-gradient-to-r from-pink-50 to-yellow-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
