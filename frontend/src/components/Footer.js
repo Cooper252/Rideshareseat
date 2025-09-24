@@ -91,11 +91,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2 text-gray-400">
                 <MapPin className="h-4 w-4" />
-                <span>Miami (MIA)</span>
+                <span>San Francisco (SFO)</span>
               </li>
               <li className="flex items-center space-x-2 text-gray-400">
                 <MapPin className="h-4 w-4" />
-                <span>Chicago (ORD)</span>
+                <span>Miami (MIA)</span>
               </li>
               <li>
                 <Link to="/locations" className="text-blue-400 hover:text-blue-300 transition-colors text-sm">
