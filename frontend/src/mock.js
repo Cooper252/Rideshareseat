@@ -142,14 +142,25 @@ export const mockUser = {
 
 export const mockPricingPlans = [
   {
-    name: 'Daily Rental',
-    price: 19.95,
+    name: 'Wayb Pico (Ages 1-4)',
+    price: 14.95,
     period: 'per day',
     features: [
-      'Premium car seat rental',
-      'Branded carrying backpack',
-      'Kiosk pickup & return',
-      '24/7 customer support'
+      'Ultra-portable car seat rental',
+      'FAA approved for airplanes',
+      'Weighs only 8 lbs',
+      'Branded carrying backpack'
+    ]
+  },
+  {
+    name: 'Ridesafer Vest (Ages 5+)',
+    price: 9.95,
+    period: 'per day',
+    features: [
+      'Innovative travel vest',
+      'No installation required',
+      'Works in any vehicle',
+      'FMVSS 213 certified'
     ]
   },
   {
