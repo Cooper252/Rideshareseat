@@ -230,7 +230,7 @@ const WaiverPage = () => {
                         Download Copy
                       </Button>
                       <Button variant="outline" className="flex-1">
-                        <Print className="h-4 w-4 mr-2" />
+                        <Printer className="h-4 w-4 mr-2" />
                         Print Copy
                       </Button>
                     </div>
