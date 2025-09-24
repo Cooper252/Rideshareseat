@@ -80,7 +80,7 @@ const HomePage = () => {
               <div className="flex items-center justify-center">
                 <DollarSign className="h-8 w-8 text-green-600 mr-3" />
                 <span className="text-2xl lg:text-3xl font-bold font-heading text-green-800">
-                  Save an average of $382 per trip over renting a vehicle
+                  Save over $286 per 3-day trip vs renting a vehicle
                 </span>
               </div>
             </div>
