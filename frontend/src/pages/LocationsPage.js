@@ -128,18 +128,14 @@ const LocationsPage = () => {
                         <Car className="h-5 w-5 text-gray-500" />
                         <span className="text-sm font-medium text-gray-700">Current Inventory</span>
                       </div>
-                      <div className="grid grid-cols-3 gap-2 text-sm">
+                      <div className="grid grid-cols-2 gap-2 text-sm">
                         <div className="bg-gray-50 p-2 rounded text-center">
-                          <div className="font-semibold text-gray-900">{location.inventory.toddler}</div>
-                          <div className="text-gray-600">Toddler</div>
+                          <div className="font-semibold text-gray-900">{location.inventory.wayb_pico}</div>
+                          <div className="text-gray-600">Wayb Pico</div>
                         </div>
                         <div className="bg-gray-50 p-2 rounded text-center">
-                          <div className="font-semibold text-gray-900">{location.inventory.booster}</div>
-                          <div className="text-gray-600">Booster</div>
-                        </div>
-                        <div className="bg-gray-50 p-2 rounded text-center">
-                          <div className="font-semibold text-gray-900">{location.inventory.convertible}</div>
-                          <div className="text-gray-600">Convertible</div>
+                          <div className="font-semibold text-gray-900">{location.inventory.ridesafer_vest}</div>
+                          <div className="text-gray-600">Ridesafer</div>
                         </div>
                       </div>
                     </div>
