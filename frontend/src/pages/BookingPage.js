@@ -279,7 +279,7 @@ const BookingPage = () => {
                             }`}
                             onClick={() => setSeatSeatType(seat.id)}
                           >
-                            <img src={seat.image} alt={seat.name} className="w-full h-32 object-cover rounded mb-3" />
+                            <img src={seat.image} alt={seat.name} className="w-full h-24 object-contain rounded mb-3" />
                             <h3 className="font-semibold text-gray-900 mb-1">{seat.name}</h3>
                             <p className="text-sm text-gray-600 mb-2">{seat.age_range}</p>
                             <p className="text-xs text-gray-500 mb-2">{seat.weight_range}</p>
