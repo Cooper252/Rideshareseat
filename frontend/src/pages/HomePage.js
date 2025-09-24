@@ -1,0 +1,319 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+import { 
+  Car, 
+  Shield, 
+  Clock, 
+  DollarSign, 
+  MapPin, 
+  Star,
+  CheckCircle,
+  ArrowRight,
+  Users,
+  Award,
+  Zap
+} from 'lucide-react';
+import { mockTestimonials, mockPricingPlans } from '../mock';
+
+const HomePage = () => {
+  const features = [
+    {
+      icon: <Shield className="h-8 w-8 text-blue-600" />,
+      title: 'Safety First',
+      description: 'All car seats meet or exceed federal safety standards with professional cleaning and inspection between each rental.'
+    },
+    {
+      icon: <Clock className="h-8 w-8 text-blue-600" />,
+      title: 'Instant Pickup',
+      description: 'Skip the rental car lines. Pick up your car seat from our smart kiosks in airport baggage claim areas.'
+    },
+    {
+      icon: <DollarSign className="h-8 w-8 text-blue-600" />,
+      title: 'Save Money',
+      description: 'Starting at just $19.95/day - significantly less expensive than traditional car rental with car seat options.'
+    },
+    {
+      icon: <MapPin className="h-8 w-8 text-blue-600" />,
+      title: 'Convenient Locations',
+      description: 'Available at major airports nationwide with 24/7 kiosk access for maximum flexibility.'
+    }
+  ];
+
+  const benefits = [
+    'No more lugging car seats through airports',
+    'Use rideshare, taxi, or public transportation freely',
+    'Professional cleaning between each rental',
+    'Lightweight, portable, collapsible design',
+    'Branded backpack included with every rental',
+    '24/7 customer support and assistance'
+  ];
+
+  const stats = [
+    { number: '50,000+', label: 'Happy Families' },
+    { number: '15+', label: 'Airport Locations' },
+    { number: '99.9%', label: 'Uptime' },
+    { number: '4.9/5', label: 'Customer Rating' }
+  ];
+
+  return (
+    <div className="overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-blue-50 to-indigo-100 py-20 lg:py-28">
+        <div className="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <Badge variant="secondary" className="mb-4 bg-blue-100 text-blue-800 px-4 py-1">
+              <Award className="h-4 w-4 mr-2" />
+              Trusted by 50,000+ Families
+            </Badge>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              Travel Smarter with
+              <span className="text-blue-600 block">Portable Car Seats</span>
+            </h1>
+            
+            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+              Skip expensive car rentals and travel freely with your children. Rent premium car seats from airport kiosks and use rideshares, taxis, or public transport with complete peace of mind.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4" asChild>
+                <Link to="/book">
+                  Book Now - Starting $19.95/day
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4" asChild>
+                <Link to="/locations">View Locations</Link>
+              </Button>
+            </div>
+
+            {/* Trust Indicators */}
+            <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-500">
+              <div className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                <span>Safety Certified</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                <span>Fully Insured</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+                <span>24/7 Support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">{stat.number}</div>
+                <div className="text-gray-600 font-medium">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Why Choose RideShare Seat?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We've revolutionized family travel by making car seat rentals as easy as picking up your luggage.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {features.map((feature, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <CardContent className="p-6 text-center">
+                  <div className="flex justify-center mb-4">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                Travel Freedom for Modern Families
+              </h2>
+              <p className="text-xl text-gray-600 mb-8">
+                Say goodbye to the hassle and expense of traditional car rentals. Our portable car seats give you the flexibility to choose how you travel while keeping your children safe.
+              </p>
+              
+              <ul className="space-y-4 mb-8">
+                {benefits.map((benefit, index) => (
+                  <li key={index} className="flex items-start">
+                    <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
+                <Link to="/book">Start Your Booking</Link>
+              </Button>
+            </div>
+            
+            <div className="mt-12 lg:mt-0">
+              <div className="relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=600&h=400&fit=crop" 
+                  alt="Family with car seat"
+                  className="rounded-lg shadow-xl"
+                />
+                <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg">
+                  <div className="text-2xl font-bold">$19.95</div>
+                  <div className="text-sm opacity-90">per day</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="text-xl text-gray-600">
+              No hidden fees. No surprises. Just honest pricing for safe, reliable car seats.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {mockPricingPlans.map((plan, index) => (
+              <Card key={index} className="border-2 border-gray-200 shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
+                  <div className="text-4xl font-bold text-blue-600 mb-1">
+                    ${plan.price}
+                  </div>
+                  <div className="text-gray-500 mb-6">{plan.period}</div>
+                  
+                  <ul className="space-y-3">
+                    {plan.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center">
+                        <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                        <span className="text-gray-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-lg text-gray-600 mb-4">
+              <strong>Example:</strong> 3-day rental = $69.80 total ($19.95 × 3 days + $9.95 cleaning fee)
+            </p>
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
+              <Link to="/book">Calculate Your Cost</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Trusted by Families Nationwide
+            </h2>
+            <div className="flex items-center justify-center mb-4">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <span className="ml-2 text-lg text-gray-600">4.9/5 from 12,000+ reviews</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {mockTestimonials.map((testimonial) => (
+              <Card key={testimonial.id} className="border-0 shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4">
+                    <img 
+                      src={testimonial.avatar} 
+                      alt={testimonial.name}
+                      className="w-12 h-12 rounded-full mr-4"
+                    />
+                    <div>
+                      <div className="font-semibold text-gray-900">{testimonial.name}</div>
+                      <div className="text-sm text-gray-500">{testimonial.location}</div>
+                    </div>
+                  </div>
+                  <div className="flex mb-3">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-gray-600 italic">"{testimonial.text}"</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-blue-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+            Ready to Transform Your Family Travel?
+          </h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Join thousands of families who've discovered a better way to travel. Book your car seat rental today.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-4" asChild>
+              <Link to="/book">
+                <Zap className="mr-2 h-5 w-5" />
+                Book Now
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-blue-600" asChild>
+              <Link to="/locations">Find Locations</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default HomePage;
