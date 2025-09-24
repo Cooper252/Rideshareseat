@@ -127,13 +127,13 @@ export const mockUser = {
       name: 'Emma',
       age: 3,
       weight: 35,
-      preferred_seat: 'toddler'
+      preferred_seat: 'wayb_pico'
     },
     {
       name: 'Liam',
-      age: 5,
+      age: 6,
       weight: 55,
-      preferred_seat: 'booster'
+      preferred_seat: 'ridesafer_vest'
     }
   ],
   waiver_signed: true,
