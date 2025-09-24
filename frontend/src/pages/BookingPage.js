@@ -49,20 +49,23 @@ const BookingPage = () => {
 
   // Calculate costs when dates change
   useEffect(() => {
-    if (pickupDate && returnDate) {
+    if (pickupDate && returnDate && selectedSeatType) {
       const days = differenceInDays(returnDate, pickupDate);
       if (days > 0) {
-        const total = calculateTotal(days);
+        const selectedSeat = mockSeatTypes.find(seat => seat.id === selectedSeatType);
+        const dailyRate = selectedSeat ? selectedSeat.daily_rate : 14.95;
+        const subtotal = days * dailyRate;
+        const total = subtotal + 9.95;
         setBookingCost({
           days,
-          dailyRate: 19.95,
-          subtotal: days * 19.95,
+          dailyRate,
+          subtotal,
           cleaningFee: 9.95,
           total
         });
       }
     }
-  }, [pickupDate, returnDate]);
+  }, [pickupDate, returnDate, selectedSeatType]);
 
   const selectedLocationData = mockLocations.find(loc => loc.id.toString() === selectedLocation);
   const selectedSeatData = mockSeatTypes.find(seat => seat.id === selectedSeatType);
