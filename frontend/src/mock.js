@@ -29,6 +29,19 @@ export const mockLocations = [
   },
   {
     id: 3,
+    name: "San Francisco International Airport",
+    code: "SFO",
+    address: "San Francisco, CA 94128",
+    terminal: "Terminal 3 - Baggage Claim",
+    available: true,
+    inventory: {
+      wayb_pico: 14,
+      ridesafer_vest: 12
+    },
+    coordinates: { lat: 37.6213, lng: -122.3790 }
+  },
+  {
+    id: 4,
     name: "Miami International Airport",
     code: "MIA",
     address: "2100 NW 42nd Ave, Miami, FL 33126",
@@ -41,7 +54,7 @@ export const mockLocations = [
     coordinates: { lat: 25.7617, lng: -80.1918 }
   },
   {
-    id: 4,
+    id: 5,
     name: "Chicago O'Hare International Airport",
     code: "ORD",
     address: "10000 W O'Hare Ave, Chicago, IL 60666",
