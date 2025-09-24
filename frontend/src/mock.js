@@ -222,6 +222,8 @@ export const generateBookingId = () => {
   return `RSB-${new Date().getFullYear()}-${Math.random().toString(36).substr(2, 6).toUpperCase()}`;
 };
 
-export const calculateTotal = (days, dailyRate = 19.95, cleaningFee = 9.95) => {
+export const calculateTotal = (days, seatType, cleaningFee = 9.95) => {
+  const seat = mockSeatTypes.find(s => s.id === seatType);
+  const dailyRate = seat ? seat.daily_rate : 14.95;
   return (days * dailyRate) + cleaningFee;
 };
