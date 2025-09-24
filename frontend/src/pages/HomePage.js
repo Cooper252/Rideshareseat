@@ -183,11 +183,11 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {mockSeatTypes.map((seat, index) => (
               <Card key={seat.id} className="border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden bg-white">
-                <div className="aspect-w-16 aspect-h-12 bg-gradient-to-br from-pink-50 to-blue-50">
+                <div className="aspect-w-16 aspect-h-10 bg-gradient-to-br from-pink-50 to-blue-50 p-4">
                   <img 
                     src={seat.image} 
                     alt={seat.name}
-                    className="w-full h-72 object-cover"
+                    className="w-full h-56 object-contain mx-auto"
                   />
                 </div>
                 <CardContent className="p-8">
