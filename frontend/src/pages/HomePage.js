@@ -75,6 +75,16 @@ const HomePage = () => {
               <span className="bg-gradient-to-r from-pink-600 via-blue-600 to-yellow-600 bg-clip-text text-transparent block">Portable Car Seats</span>
             </h1>
             
+            {/* Savings Highlight */}
+            <div className="mb-8 p-6 bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl border-2 border-green-200 shadow-lg max-w-2xl mx-auto">
+              <div className="flex items-center justify-center">
+                <DollarSign className="h-8 w-8 text-green-600 mr-3" />
+                <span className="text-2xl lg:text-3xl font-bold font-heading text-green-800">
+                  Save an average of $382 per trip over renting a vehicle
+                </span>
+              </div>
+            </div>
+            
             <p className="text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed font-body">
               Skip expensive car rentals and travel freely with your children. Rent premium car seats from airport kiosks and use rideshares, taxis, or public transport with complete peace of mind.
             </p>
