@@ -55,12 +55,12 @@ const BookingPage = () => {
         const selectedSeat = mockSeatTypes.find(seat => seat.id === selectedSeatType);
         const dailyRate = selectedSeat ? selectedSeat.daily_rate : 14.95;
         const subtotal = days * dailyRate;
-        const total = subtotal + 9.95;
+        const total = subtotal + 7.95;
         setBookingCost({
           days,
           dailyRate,
           subtotal,
-          cleaningFee: 9.95,
+          cleaningFee: 7.95,
           total
         });
       }
