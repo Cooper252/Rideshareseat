@@ -143,34 +143,34 @@ const BookingPage = () => {
         </div>
 
         {/* Progress Steps */}
-        <div className="mb-8">
+        <div className="mb-12">
           <div className="flex items-center justify-center">
             {steps.map((step, index) => (
               <div key={index} className="flex items-center">
-                <div className={`flex items-center justify-center w-10 h-10 rounded-full border-2 ${
+                <div className={`flex items-center justify-center w-14 h-14 rounded-full border-3 text-lg font-bold ${
                   currentStep > index + 1 
                     ? 'bg-green-500 border-green-500 text-white'
                     : currentStep === index + 1
-                    ? 'bg-blue-600 border-blue-600 text-white'
+                    ? 'bg-gradient-to-r from-pink-500 to-blue-500 border-pink-500 text-white'
                     : 'border-gray-300 text-gray-400'
                 }`}>
                   {currentStep > index + 1 ? (
-                    <CheckCircle className="h-6 w-6" />
+                    <CheckCircle className="h-8 w-8" />
                   ) : (
                     <span>{index + 1}</span>
                   )}
                 </div>
                 {index < steps.length - 1 && (
-                  <div className={`w-24 h-1 mx-4 ${
+                  <div className={`w-32 h-2 mx-6 rounded-full ${
                     currentStep > index + 1 ? 'bg-green-500' : 'bg-gray-300'
                   }`} />
                 )}
               </div>
             ))}
           </div>
-          <div className="text-center mt-4">
-            <h2 className="text-xl font-semibold text-gray-900">{steps[currentStep - 1].title}</h2>
-            <p className="text-gray-600">{steps[currentStep - 1].description}</p>
+          <div className="text-center mt-6">
+            <h2 className="text-2xl font-semibold text-gray-900">{steps[currentStep - 1].title}</h2>
+            <p className="text-lg text-gray-600">{steps[currentStep - 1].description}</p>
           </div>
         </div>
 
