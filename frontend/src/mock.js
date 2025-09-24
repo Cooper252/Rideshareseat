@@ -77,7 +77,11 @@ export const mockSeatTypes = [
     age_range: '1-4 years',
     daily_rate: 14.95,
     features: ['Ultra-compact fold', 'FAA approved for airplanes', 'Weighs only 8 lbs', '5-point harness', 'Easy installation'],
-    image: 'https://images.unsplash.com/photo-1516309229383-2001fee59b2b?w=400&h=300&fit=crop'
+    image: 'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/2pmet4lg_Pico1.webp',
+    gallery: [
+      'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/2pmet4lg_Pico1.webp',
+      'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/pr11ye7b_Pico2.webp'
+    ]
   },
   {
     id: 'ridesafer_vest',
@@ -87,7 +91,7 @@ export const mockSeatTypes = [
     age_range: '5+ years',
     daily_rate: 9.95,
     features: ['Wearable safety vest', 'No installation required', 'Works in any vehicle', 'Compact storage', 'FMVSS 213 certified'],
-    image: 'https://images.unsplash.com/photo-1622612023350-b15f063eabe6?w=400&h=300&fit=crop'
+    image: 'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/haqp2wx4_Ridesafer1.webp'
   }
 ];
 
