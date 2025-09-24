@@ -31,26 +31,26 @@ const Header = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="bg-white shadow-sm border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <header className="bg-white shadow-lg border-b-2 border-pink-200">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-blue-600 p-2 rounded-lg">
-              <Car className="h-6 w-6 text-white" />
+          <Link to="/" className="flex items-center space-x-3">
+            <div className="bg-gradient-to-r from-pink-500 to-blue-500 p-3 rounded-xl shadow-lg">
+              <Car className="h-8 w-8 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">RideShare Seat</span>
+            <span className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text text-transparent">RideShare Seat</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-12">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                className={`text-lg font-semibold transition-colors hover:text-pink-600 ${
                   isActive(item.href)
-                    ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
+                    ? 'text-pink-600 border-b-3 border-pink-600 pb-1'
                     : 'text-gray-700'
                 }`}
               >
@@ -60,35 +60,35 @@ const Header = () => {
           </nav>
 
           {/* Desktop Auth */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-6">
             {isAuthenticated ? (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" className="flex items-center space-x-2">
-                    <User className="h-4 w-4" />
+                  <Button variant="ghost" className="flex items-center space-x-2 text-lg hover:bg-pink-50">
+                    <User className="h-5 w-5" />
                     <span>{user?.first_name || 'Account'}</span>
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" className="w-48">
                   <DropdownMenuItem asChild>
-                    <Link to="/dashboard" className="flex items-center">
+                    <Link to="/dashboard" className="flex items-center text-base">
                       <User className="h-4 w-4 mr-2" />
                       Dashboard
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem onClick={handleLogout} className="flex items-center text-red-600">
+                  <DropdownMenuItem onClick={handleLogout} className="flex items-center text-red-600 text-base">
                     <LogOut className="h-4 w-4 mr-2" />
                     Sign Out
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <div className="space-x-2">
-                <Button variant="ghost" asChild>
+              <div className="space-x-4">
+                <Button variant="ghost" className="text-lg hover:bg-pink-50" asChild>
                   <Link to="/login">Sign In</Link>
                 </Button>
-                <Button asChild>
+                <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white text-lg px-6 py-3" asChild>
                   <Link to="/signup">Sign Up</Link>
                 </Button>
               </div>
