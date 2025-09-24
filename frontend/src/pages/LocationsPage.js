@@ -74,7 +74,7 @@ const LocationsPage = () => {
             <CardContent className="p-6 text-center">
               <div className="text-3xl font-bold text-orange-600 mb-2">
                 {mockLocations.reduce((total, loc) => 
-                  total + loc.inventory.toddler + loc.inventory.booster + loc.inventory.convertible, 0
+                  total + loc.inventory.wayb_pico + loc.inventory.ridesafer_vest, 0
                 )}
               </div>
               <div className="text-gray-600">Total Seats Available</div>
