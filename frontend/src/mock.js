@@ -9,9 +9,8 @@ export const mockLocations = [
     terminal: "Terminal 1 - Baggage Claim",
     available: true,
     inventory: {
-      toddler: 8,
-      booster: 12,
-      convertible: 6
+      wayb_pico: 12,
+      ridesafer_vest: 15
     },
     coordinates: { lat: 33.9425, lng: -118.4081 }
   },
@@ -23,9 +22,8 @@ export const mockLocations = [
     terminal: "Terminal 4 - Baggage Claim",
     available: true,
     inventory: {
-      toddler: 5,
-      booster: 9,
-      convertible: 4
+      wayb_pico: 8,
+      ridesafer_vest: 18
     },
     coordinates: { lat: 40.6413, lng: -73.7781 }
   },
@@ -37,9 +35,8 @@ export const mockLocations = [
     terminal: "Terminal D - Baggage Claim",
     available: true,
     inventory: {
-      toddler: 7,
-      booster: 11,
-      convertible: 3
+      wayb_pico: 10,
+      ridesafer_vest: 14
     },
     coordinates: { lat: 25.7617, lng: -80.1918 }
   },
@@ -51,9 +48,8 @@ export const mockLocations = [
     terminal: "Terminal 1 - Baggage Claim",
     available: false,
     inventory: {
-      toddler: 0,
-      booster: 0,
-      convertible: 0
+      wayb_pico: 0,
+      ridesafer_vest: 0
     },
     coordinates: { lat: 41.9742, lng: -87.9073 }
   }
