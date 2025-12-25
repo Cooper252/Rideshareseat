@@ -77,10 +77,11 @@ export const mockSeatTypes = [
     age_range: '1-4 years',
     daily_rate: 14.95,
     features: ['Ultra-compact fold', 'FAA approved for airplanes', 'Weighs only 8 lbs', '5-point harness', 'Easy installation'],
-    image: 'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/2pmet4lg_Pico1.webp',
+    image: 'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/d799uc34_pico-earth-2.webp',
     gallery: [
-      'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/2pmet4lg_Pico1.webp',
-      'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/pr11ye7b_Pico2.webp'
+      'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/d799uc34_pico-earth-2.webp',
+      'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/4dj6rbid_pico-earth-5.webp',
+      'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/o189y688_duo-jet.webp'
     ]
   },
   {
