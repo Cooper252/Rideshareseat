@@ -88,6 +88,13 @@ const HomePage = () => {
             <p className="text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed font-body">
               Skip expensive car rentals and travel freely with your children. Rent premium car seats from airport kiosks and use rideshares, taxis, or public transport with complete peace of mind.
             </p>
+
+            {/* Pricing Highlight */}
+            <div className="mb-10">
+              <div className="inline-block bg-gradient-to-r from-yellow-400 to-pink-500 text-white px-8 py-4 rounded-full shadow-lg">
+                <span className="text-2xl font-bold font-accent">Starting at only $9.95 per day!</span>
+              </div>
+            </div>
             
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
               <Button size="lg" className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white text-xl px-10 py-6 shadow-lg font-accent font-semibold" asChild>
