@@ -269,10 +269,6 @@ const HomePage = () => {
                   alt="Family with car seat"
                   className="rounded-lg shadow-xl"
                 />
-                <div className="absolute -bottom-8 -right-8 bg-gradient-to-r from-yellow-500 to-pink-500 text-white p-8 rounded-xl shadow-2xl">
-                  <div className="text-3xl font-bold">from $9.95</div>
-                  <div className="text-lg opacity-90">per day</div>
-                </div>
               </div>
             </div>
           </div>
