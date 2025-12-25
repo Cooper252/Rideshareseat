@@ -92,7 +92,7 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
               <Button size="lg" className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white text-xl px-10 py-6 shadow-lg font-accent font-semibold" asChild>
                 <Link to="/book">
-                  Book Now - Starting $9.95/day
+                  Start Your Booking
                   <ArrowRight className="ml-3 h-6 w-6" />
                 </Link>
               </Button>
