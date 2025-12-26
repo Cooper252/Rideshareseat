@@ -244,7 +244,7 @@ const HomePage = () => {
                     </ul>
                   </div>
 
-                  <Button size="lg" className="w-full bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white font-accent font-semibold" asChild>
+                  <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-accent font-semibold" asChild>
                     <Link to="/book">
                       Rent {seat.name}
                       <ArrowRight className="ml-2 h-5 w-5" />
