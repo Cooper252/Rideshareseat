@@ -76,7 +76,7 @@ export const mockSeatTypes = [
     weight_range: '22-40 lbs',
     age_range: '1-4 years',
     daily_rate: 14.95,
-    features: ['Ultra-compact fold', 'FAA approved for airplanes', 'Weighs only 8 lbs', '5-point harness', 'Easy installation'],
+    features: ['Ultra-compact fold', 'FAA approved for airplanes', 'Weighs only 8 lbs', '5-point harness', 'Installs in under 30 seconds'],
     image: 'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/d799uc34_pico-earth-2.webp',
     gallery: [
       'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/d799uc34_pico-earth-2.webp',
@@ -91,7 +91,7 @@ export const mockSeatTypes = [
     weight_range: '30-100 lbs',
     age_range: '5+ years',
     daily_rate: 9.95,
-    features: ['Wearable safety vest', 'No installation required', 'Works in any vehicle', 'Compact storage', 'FMVSS 213 certified'],
+    features: ['Wearable safety vest', 'No installation required', 'Works in any vehicle', 'Ready in under 30 seconds', 'FMVSS 213 certified'],
     image: 'https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/haqp2wx4_Ridesafer1.webp'
   }
 ];
