@@ -258,27 +258,27 @@ const HomePage = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 bg-gradient-to-r from-blue-50 to-pink-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl lg:text-4xl font-bold font-heading text-gray-900 mb-6">
                 Travel Freedom for Modern Families
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-gray-600 mb-8 font-body">
                 Say goodbye to the hassle and expense of traditional car rentals. Our portable car seats give you the flexibility to choose how you travel while keeping your children safe.
               </p>
               
               <ul className="space-y-4 mb-8">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700">{benefit}</span>
                   </li>
                 ))}
               </ul>
 
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-accent font-semibold" asChild>
                 <Link to="/book">Start Your Booking</Link>
               </Button>
             </div>
