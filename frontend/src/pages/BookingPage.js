@@ -279,7 +279,22 @@ const BookingPage = () => {
                             }`}
                             onClick={() => setSeatSeatType(seat.id)}
                           >
-                            <img src={seat.image} alt={seat.name} className="w-full h-24 object-contain rounded mb-3" />
+                            {seat.gallery && seat.gallery.length > 1 ? (
+                              // Multiple images for Wayb Pico
+                              <div className="grid grid-cols-3 gap-1 mb-3">
+                                {seat.gallery.map((image, imgIndex) => (
+                                  <img 
+                                    key={imgIndex}
+                                    src={image} 
+                                    alt={`${seat.name} ${imgIndex + 1}`} 
+                                    className="w-full h-16 object-contain rounded" 
+                                  />
+                                ))}
+                              </div>
+                            ) : (
+                              // Single image for other products
+                              <img src={seat.image} alt={seat.name} className="w-full h-24 object-contain rounded mb-3" />
+                            )}
                             <h3 className="font-semibold text-gray-900 mb-1">{seat.name}</h3>
                             <p className="text-sm text-gray-600 mb-2">{seat.age_range}</p>
                             <p className="text-xs text-gray-500 mb-2">{seat.weight_range}</p>
