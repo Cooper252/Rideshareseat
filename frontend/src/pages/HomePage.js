@@ -385,9 +385,9 @@ const HomePage = () => {
               <div className="bg-white rounded-lg p-8">
                 <h3 className="text-4xl font-bold font-heading text-gray-900 mb-4">You Save</h3>
                 <div className="text-6xl font-bold text-green-600 mb-4">
-                  $286.75
+                  $346.75
                 </div>
-                <p className="text-2xl text-gray-600 font-body">That's a 55% savings on your family travel costs!</p>
+                <p className="text-2xl text-gray-600 font-body">That's a 60% savings on your family travel costs!</p>
               </div>
             </div>
           </div>
