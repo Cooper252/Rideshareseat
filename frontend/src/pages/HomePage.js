@@ -23,7 +23,7 @@ const HomePage = () => {
     {
       icon: <DollarSign className="h-10 w-10 text-white" />,
       title: 'Massive Savings',
-      description: 'Save over $286 per 3-day trip compared to traditional car rentals. Our affordable daily rates make family travel budget-friendly.'
+      description: 'Save over $346 per 3-day trip compared to traditional car rentals. Our affordable daily rates make family travel budget-friendly.'
     },
     {
       icon: <Shield className="h-10 w-10 text-white" />,
