@@ -31,15 +31,15 @@ const Header = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <header className="bg-white shadow-lg border-b-2 border-pink-200">
+    <header className="bg-white shadow-lg border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="bg-gradient-to-r from-pink-500 to-blue-500 p-3 rounded-xl shadow-lg">
+            <div className="bg-blue-600 p-3 rounded-lg shadow-md">
               <Car className="h-8 w-8 text-white" />
             </div>
-            <span className="text-2xl font-bold font-heading bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text text-transparent">RideShare Seat</span>
+            <span className="text-2xl font-bold font-heading text-blue-900">RideShare Seat</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -48,9 +48,9 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-lg font-semibold font-accent transition-colors hover:text-pink-600 ${
+                className={`text-lg font-semibold font-accent transition-colors hover:text-blue-600 ${
                   isActive(item.href)
-                    ? 'text-pink-600 border-b-3 border-pink-600 pb-1'
+                    ? 'text-blue-600 border-b-2 border-blue-600 pb-1'
                     : 'text-gray-700'
                 }`}
               >
@@ -64,7 +64,7 @@ const Header = () => {
             {isAuthenticated ? (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" className="flex items-center space-x-2 text-lg hover:bg-pink-50">
+                  <Button variant="ghost" className="flex items-center space-x-2 text-lg hover:bg-gray-100">
                     <User className="h-5 w-5" />
                     <span>{user?.first_name || 'Account'}</span>
                   </Button>
@@ -85,10 +85,10 @@ const Header = () => {
               </DropdownMenu>
             ) : (
               <div className="space-x-4">
-                <Button variant="ghost" className="text-lg hover:bg-pink-50" asChild>
+                <Button variant="ghost" className="text-lg hover:bg-gray-100" asChild>
                   <Link to="/login">Sign In</Link>
                 </Button>
-                <Button className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white text-lg px-6 py-3" asChild>
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-6 py-3 shadow-md" asChild>
                   <Link to="/signup">Sign Up</Link>
                 </Button>
               </div>
