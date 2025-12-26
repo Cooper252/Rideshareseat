@@ -188,8 +188,8 @@ const HomePage = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {mockSeatTypes.map((seat, index) => (
-              <Card key={seat.id} className="border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden bg-white">
-                <div className="aspect-w-16 aspect-h-10 bg-gradient-to-br from-pink-50 to-blue-50 p-4">
+              <Card key={seat.id} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden bg-white">
+                <div className="aspect-w-16 aspect-h-10 bg-gray-50 p-4">
                   {seat.gallery && seat.gallery.length > 1 ? (
                     // Multiple images for Wayb Pico
                     <div className="grid grid-cols-3 gap-2 h-56">
@@ -214,7 +214,7 @@ const HomePage = () => {
                 <CardContent className="p-8">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-3xl font-bold font-heading text-gray-900">{seat.name}</h3>
-                    <Badge className="bg-gradient-to-r from-yellow-400 to-pink-500 text-white text-lg px-4 py-2 font-accent">
+                    <Badge className="bg-blue-600 text-white text-lg px-4 py-2 font-accent">
                       ${seat.daily_rate}/day
                     </Badge>
                   </div>
