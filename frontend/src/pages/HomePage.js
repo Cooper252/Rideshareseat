@@ -310,8 +310,8 @@ const HomePage = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Traditional Car Rental */}
-            <Card className="border-2 border-red-200 shadow-2xl bg-gradient-to-br from-red-50 to-orange-50">
-              <CardHeader className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-8">
+            <Card className="border-2 border-red-200 shadow-lg bg-white">
+              <CardHeader className="bg-red-600 text-white p-8">
                 <CardTitle className="text-3xl font-bold font-heading text-center">Traditional Car Rental</CardTitle>
                 <p className="text-center text-red-100 text-xl font-body">3-Day Trip Total</p>
               </CardHeader>
