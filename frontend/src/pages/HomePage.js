@@ -132,7 +132,7 @@ const HomePage = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text text-transparent mb-3">{stat.number}</div>
+                <div className="text-4xl lg:text-5xl font-bold text-blue-600 mb-3">{stat.number}</div>
                 <div className="text-gray-600 font-semibold text-lg">{stat.label}</div>
               </div>
             ))}
@@ -141,7 +141,7 @@ const HomePage = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-gradient-to-r from-pink-50 to-yellow-50">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center mb-20">
             <h2 className="text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-6">
@@ -154,10 +154,10 @@ const HomePage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {features.map((feature, index) => (
-              <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-shadow duration-500 bg-white/80 backdrop-blur-sm">
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
                 <CardContent className="p-8 text-center">
                   <div className="flex justify-center mb-6">
-                    <div className="p-4 bg-gradient-to-r from-pink-500 to-blue-500 rounded-full">
+                    <div className="p-4 bg-blue-600 rounded-lg">
                       {React.cloneElement(feature.icon, { className: "h-10 w-10 text-white" })}
                     </div>
                   </div>
