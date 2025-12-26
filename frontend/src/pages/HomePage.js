@@ -403,6 +403,127 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Time Comparison Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-6">
+              See How Much Time You Save
+            </h2>
+            <p className="text-2xl text-gray-600 max-w-4xl mx-auto font-body">
+              Renting a car seat through RideShare Seat is dramatically more convenient than traditional car rentals
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Traditional Car Rental Time */}
+            <Card className="border-2 border-orange-200 shadow-lg bg-white">
+              <CardHeader className="bg-orange-500 text-white p-8">
+                <CardTitle className="text-3xl font-bold font-heading text-center">Traditional Car Rental</CardTitle>
+                <p className="text-center text-orange-100 text-xl font-body">Total Time Investment</p>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center py-3 border-b border-orange-200">
+                    <span className="text-lg font-medium font-body">Shuttle to car rental lot from airport</span>
+                    <span className="text-lg font-bold">15 min</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-orange-200">
+                    <span className="text-lg font-medium font-body">Time at rental counter</span>
+                    <span className="text-lg font-bold">15 min</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-orange-200">
+                    <span className="text-lg font-medium font-body">Finding parking (10 min/day × 3)</span>
+                    <span className="text-lg font-bold">30 min</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-orange-200">
+                    <span className="text-lg font-medium font-body">Walking to/from parking spots</span>
+                    <span className="text-lg font-bold">20 min</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-orange-200">
+                    <span className="text-lg font-medium font-body">Time refilling gas</span>
+                    <span className="text-lg font-bold">10 min</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-orange-200">
+                    <span className="text-lg font-medium font-body">Vehicle inspection and paperwork</span>
+                    <span className="text-lg font-bold">8 min</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-orange-200">
+                    <span className="text-lg font-medium font-body">Drop-off vehicle & shuttle to airport</span>
+                    <span className="text-lg font-bold">25 min</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-orange-200">
+                    <span className="text-lg font-medium font-body">Waiting for shuttles & navigation delays</span>
+                    <span className="text-lg font-bold">12 min</span>
+                  </div>
+                  <div className="flex justify-between items-center py-6 bg-orange-100 rounded-lg px-4 mt-6">
+                    <span className="text-2xl font-bold font-heading text-orange-800">Total Time:</span>
+                    <span className="text-3xl font-bold text-orange-600">135 min</span>
+                  </div>
+                  <div className="text-center mt-4">
+                    <span className="text-lg font-semibold text-orange-700">That's over 2 hours!</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* RideShare Seat Time */}
+            <Card className="border-2 border-blue-200 shadow-lg bg-white">
+              <CardHeader className="bg-blue-600 text-white p-8">
+                <CardTitle className="text-3xl font-bold font-heading text-center">RideShare Seat</CardTitle>
+                <p className="text-center text-blue-100 text-xl font-body">Total Time Investment</p>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center py-3 border-b border-blue-200">
+                    <span className="text-lg font-medium font-body">Retrieve car seat from smart locker in baggage claim</span>
+                    <span className="text-lg font-bold">1 min</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-blue-200">
+                    <span className="text-lg font-medium font-body">Install car seat (under 30 seconds each time)</span>
+                    <span className="text-lg font-bold">1 min</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b border-blue-200">
+                    <span className="text-lg font-medium font-body">Drop off car seat in ticketing area storage bin</span>
+                    <span className="text-lg font-bold">1 min</span>
+                  </div>
+                  <div className="py-24"></div> {/* Spacer to align with the other card */}
+                  <div className="flex justify-between items-center py-6 bg-blue-100 rounded-lg px-4 mt-6">
+                    <span className="text-2xl font-bold font-heading text-blue-800">Total Time:</span>
+                    <span className="text-3xl font-bold text-blue-600">3 min</span>
+                  </div>
+                  <div className="text-center mt-4">
+                    <span className="text-lg font-semibold text-blue-700">Quick & convenient!</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Time Savings Highlight */}
+          <div className="mt-12 text-center">
+            <div className="bg-green-600 p-2 rounded-lg max-w-2xl mx-auto">
+              <div className="bg-white rounded-lg p-8">
+                <h3 className="text-4xl font-bold font-heading text-gray-900 mb-4">You Save</h3>
+                <div className="text-6xl font-bold text-green-600 mb-4">
+                  132 Minutes
+                </div>
+                <p className="text-2xl text-gray-600 font-body">That's over 2 hours of your precious vacation time!</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white text-xl px-12 py-6 font-accent font-bold shadow-lg" asChild>
+              <Link to="/book">
+                Save Time Today
+                <Clock className="ml-3 h-6 w-6" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
