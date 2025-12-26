@@ -381,10 +381,10 @@ const HomePage = () => {
 
           {/* Savings Highlight */}
           <div className="mt-12 text-center">
-            <div className="bg-gradient-to-r from-yellow-400 via-pink-500 to-blue-500 p-1 rounded-3xl max-w-2xl mx-auto">
-              <div className="bg-white rounded-3xl p-8">
+            <div className="bg-blue-600 p-2 rounded-lg max-w-2xl mx-auto">
+              <div className="bg-white rounded-lg p-8">
                 <h3 className="text-4xl font-bold font-heading text-gray-900 mb-4">You Save</h3>
-                <div className="text-6xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-4">
+                <div className="text-6xl font-bold text-green-600 mb-4">
                   $286.75
                 </div>
                 <p className="text-2xl text-gray-600 font-body">That's a 55% savings on your family travel costs!</p>
@@ -393,7 +393,7 @@ const HomePage = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white text-xl px-12 py-6 font-accent font-bold shadow-2xl" asChild>
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-xl px-12 py-6 font-accent font-bold shadow-lg" asChild>
               <Link to="/book">
                 Start Saving Today
                 <ArrowRight className="ml-3 h-6 w-6" />
