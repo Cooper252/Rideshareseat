@@ -191,11 +191,26 @@ const HomePage = () => {
             {mockSeatTypes.map((seat, index) => (
               <Card key={seat.id} className="border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden bg-white">
                 <div className="aspect-w-16 aspect-h-10 bg-gradient-to-br from-pink-50 to-blue-50 p-4">
-                  <img 
-                    src={seat.image} 
-                    alt={seat.name}
-                    className="w-full h-56 object-contain mx-auto"
-                  />
+                  {seat.gallery && seat.gallery.length > 1 ? (
+                    // Multiple images for Wayb Pico
+                    <div className="grid grid-cols-3 gap-2 h-56">
+                      {seat.gallery.map((image, imgIndex) => (
+                        <img 
+                          key={imgIndex}
+                          src={image} 
+                          alt={`${seat.name} ${imgIndex + 1}`}
+                          className="w-full h-full object-contain rounded"
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    // Single image for other products
+                    <img 
+                      src={seat.image} 
+                      alt={seat.name}
+                      className="w-full h-56 object-contain mx-auto"
+                    />
+                  )}
                 </div>
                 <CardContent className="p-8">
                   <div className="flex items-center justify-between mb-4">
