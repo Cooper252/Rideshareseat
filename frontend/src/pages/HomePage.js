@@ -318,8 +318,8 @@ const HomePage = () => {
               <CardContent className="p-8">
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-3 border-b border-red-200">
-                    <span className="text-lg font-medium font-body">Car Rental ($59.95/day × 3)</span>
-                    <span className="text-lg font-bold">$179.85</span>
+                    <span className="text-lg font-medium font-body">Car Rental ($79.95/day × 3)</span>
+                    <span className="text-lg font-bold">$239.85</span>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b border-red-200">
                     <span className="text-lg font-medium font-body">Rental Insurance ($19.95/day × 3)</span>
@@ -343,7 +343,7 @@ const HomePage = () => {
                   </div>
                   <div className="flex justify-between items-center py-6 bg-red-100 rounded-lg px-4 mt-6">
                     <span className="text-2xl font-bold font-heading text-red-800">Total Cost:</span>
-                    <span className="text-3xl font-bold text-red-600">$519.55</span>
+                    <span className="text-3xl font-bold text-red-600">$579.55</span>
                   </div>
                 </div>
               </CardContent>
