@@ -61,24 +61,23 @@ const HomePage = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-pink-50 via-blue-50 to-yellow-50 py-24 lg:py-32">
-        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm"></div>
+      <section className="relative bg-gray-50 py-24 lg:py-32">
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="text-center max-w-5xl mx-auto">
-            <Badge variant="secondary" className="mb-6 bg-yellow-200 text-pink-800 px-6 py-2 text-lg font-accent font-semibold">
+            <Badge variant="secondary" className="mb-6 bg-blue-100 text-blue-800 px-6 py-2 text-lg font-accent font-semibold">
               <Award className="h-5 w-5 mr-3" />
               Trusted by 50,000+ Families
             </Badge>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-gray-900 mb-8 leading-tight">
               Travel Smarter with
-              <span className="bg-gradient-to-r from-pink-600 via-blue-600 to-yellow-600 bg-clip-text text-transparent block">Portable Car Seats</span>
+              <span className="text-blue-600 block">Portable Car Seats</span>
             </h1>
             
             {/* Savings Highlight */}
-            <div className="mb-8 p-6 bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl border-2 border-green-200 shadow-lg max-w-2xl mx-auto">
+            <div className="mb-8 p-6 bg-green-100 rounded-xl border border-green-300 shadow-md max-w-2xl mx-auto">
               <div className="flex items-center justify-center">
-                <DollarSign className="h-8 w-8 text-green-600 mr-3" />
+                <DollarSign className="h-8 w-8 text-green-700 mr-3" />
                 <span className="text-2xl lg:text-3xl font-bold font-heading text-green-800">
                   Save over $286 per 3-day trip vs renting a vehicle
                 </span>
@@ -91,19 +90,19 @@ const HomePage = () => {
 
             {/* Pricing Highlight */}
             <div className="mb-10">
-              <div className="inline-block bg-gradient-to-r from-yellow-400 to-pink-500 text-white px-8 py-4 rounded-full shadow-lg">
+              <div className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg shadow-md">
                 <span className="text-2xl font-bold font-accent">Starting at only $9.95 per day!</span>
               </div>
             </div>
             
             <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
-              <Button size="lg" className="bg-gradient-to-r from-pink-500 to-blue-500 hover:from-pink-600 hover:to-blue-600 text-white text-xl px-10 py-6 shadow-lg font-accent font-semibold" asChild>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-xl px-10 py-6 shadow-md font-accent font-semibold" asChild>
                 <Link to="/book">
                   Start Your Booking
                   <ArrowRight className="ml-3 h-6 w-6" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" className="text-xl px-10 py-6 border-2 border-blue-500 text-blue-600 hover:bg-blue-50 font-accent font-medium" asChild>
+              <Button variant="outline" size="lg" className="text-xl px-10 py-6 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-accent font-medium" asChild>
                 <Link to="/locations">View Locations</Link>
               </Button>
             </div>
@@ -111,15 +110,15 @@ const HomePage = () => {
             {/* Trust Indicators */}
             <div className="flex flex-wrap justify-center items-center gap-8 text-lg text-gray-600 font-body">
               <div className="flex items-center">
-                <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
+                <CheckCircle className="h-6 w-6 text-green-600 mr-3" />
                 <span className="font-medium">Safety Certified</span>
               </div>
               <div className="flex items-center">
-                <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
+                <CheckCircle className="h-6 w-6 text-green-600 mr-3" />
                 <span className="font-medium">Fully Insured</span>
               </div>
               <div className="flex items-center">
-                <CheckCircle className="h-6 w-6 text-green-500 mr-3" />
+                <CheckCircle className="h-6 w-6 text-green-600 mr-3" />
                 <span className="font-medium">24/7 Support</span>
               </div>
             </div>
