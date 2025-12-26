@@ -113,7 +113,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-pink-200 py-6">
+          <div className="md:hidden border-t border-gray-200 py-6">
             <nav className="space-y-4">
               {navigation.map((item) => (
                 <Link
@@ -121,8 +121,8 @@ const Header = () => {
                   to={item.href}
                   className={`block px-4 py-3 text-lg font-semibold rounded-lg transition-colors ${
                     isActive(item.href)
-                      ? 'text-pink-600 bg-pink-50'
-                      : 'text-gray-700 hover:text-pink-600 hover:bg-pink-50'
+                      ? 'text-blue-600 bg-blue-50'
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -131,12 +131,12 @@ const Header = () => {
               ))}
             </nav>
             
-            <div className="mt-6 pt-6 border-t border-pink-200">
+            <div className="mt-6 pt-6 border-t border-gray-200">
               {isAuthenticated ? (
                 <div className="space-y-4">
                   <Link
                     to="/dashboard"
-                    className="block px-4 py-3 text-lg font-semibold text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-lg"
+                    className="block px-4 py-3 text-lg font-semibold text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Dashboard
@@ -152,14 +152,14 @@ const Header = () => {
                 <div className="space-y-4">
                   <Link
                     to="/login"
-                    className="block px-4 py-3 text-lg font-semibold text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-lg"
+                    className="block px-4 py-3 text-lg font-semibold text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Sign In
                   </Link>
                   <Link
                     to="/signup"
-                    className="block px-4 py-3 text-lg font-semibold bg-gradient-to-r from-pink-500 to-blue-500 text-white hover:from-pink-600 hover:to-blue-600 rounded-lg text-center"
+                    className="block px-4 py-3 text-lg font-semibold bg-blue-600 text-white hover:bg-blue-700 rounded-lg text-center"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Sign Up
