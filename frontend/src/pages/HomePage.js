@@ -350,8 +350,8 @@ const HomePage = () => {
             </Card>
 
             {/* RideShare Seat Option */}
-            <Card className="border-2 border-green-200 shadow-2xl bg-gradient-to-br from-green-50 to-blue-50">
-              <CardHeader className="bg-gradient-to-r from-green-500 to-blue-500 text-white p-8">
+            <Card className="border-2 border-green-200 shadow-lg bg-white">
+              <CardHeader className="bg-green-600 text-white p-8">
                 <CardTitle className="text-3xl font-bold font-heading text-center">RideShare Seat</CardTitle>
                 <p className="text-center text-green-100 text-xl font-body">3-Day Trip Total</p>
               </CardHeader>
