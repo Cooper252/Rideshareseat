@@ -21,22 +21,22 @@ import { mockTestimonials, mockPricingPlans, mockSeatTypes } from '../mock';
 const HomePage = () => {
   const features = [
     {
-      icon: <DollarSign className="h-10 w-10 text-green-600" />,
+      icon: <DollarSign className="h-10 w-10 text-white" />,
       title: 'Massive Savings',
       description: 'Save over $286 per 3-day trip compared to traditional car rentals. Our affordable daily rates make family travel budget-friendly.'
     },
     {
-      icon: <Shield className="h-10 w-10 text-pink-600" />,
+      icon: <Shield className="h-10 w-10 text-white" />,
       title: 'Safety First',
       description: 'All car seats meet or exceed federal safety standards with professional cleaning and inspection between each rental.'
     },
     {
-      icon: <Clock className="h-10 w-10 text-blue-600" />,
+      icon: <Clock className="h-10 w-10 text-white" />,
       title: 'Instant Pickup',
       description: 'Skip the rental car lines. Pick up your car seat from our smart kiosks in airport baggage claim areas.'
     },
     {
-      icon: <MapPin className="h-10 w-10 text-pink-600" />,
+      icon: <MapPin className="h-10 w-10 text-white" />,
       title: 'Convenient Locations',
       description: 'Available at major airports nationwide with 24/7 kiosk access for maximum flexibility.'
     }
