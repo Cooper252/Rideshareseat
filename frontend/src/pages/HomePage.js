@@ -655,6 +655,98 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Portability Section */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold font-heading text-gray-900 mb-6">
+                Truly Portable. Truly Convenient.
+              </h2>
+              <p className="text-xl text-gray-600 mb-6 font-body">
+                Our Wayb Pico car seat folds flat and weighs only 8 pounds — light enough to carry anywhere. Whether you're navigating busy airports, hopping in and out of rideshares, or exploring a new city, our portable car seats go wherever you go.
+              </p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700 text-lg">Folds completely flat for easy storage</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700 text-lg">Includes a carrying backpack</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700 text-lg">Only 8 lbs — lighter than most diaper bags</span>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700 text-lg">Installs in under 30 seconds</span>
+                </div>
+              </div>
+
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white font-accent font-semibold" asChild>
+                <Link to="/book">
+                  Book Your Seat Today
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+            
+            <div className="mt-12 lg:mt-0">
+              <div className="relative">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_0658cab3-6d1c-40bf-afed-bf663411f0ef/artifacts/cr41nbuc_stardust-extra-1.webp" 
+                  alt="Woman carrying portable Wayb Pico car seat"
+                  className="rounded-lg shadow-xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Safety & Comfort Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+            <div className="mb-12 lg:mb-0">
+              <div className="relative">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_0658cab3-6d1c-40bf-afed-bf663411f0ef/artifacts/7l1sead5_planet-pdp_jpg.webp" 
+                  alt="Happy child safely secured in car seat"
+                  className="rounded-lg shadow-xl"
+                />
+              </div>
+            </div>
+            
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold font-heading text-gray-900 mb-6">
+                Safety First, Always
+              </h2>
+              <p className="text-xl text-gray-600 mb-6 font-body">
+                Every car seat in our fleet meets or exceeds federal safety standards. Our WAYB Pico is designed with a reinforced aluminum frame and energy-absorbing side impact protection to keep your little one safe.
+              </p>
+              <p className="text-xl text-gray-600 mb-8 font-body">
+                Plus, every seat is professionally cleaned and thoroughly inspected between rentals — so you can have complete peace of mind.
+              </p>
+              
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center p-4 bg-blue-50 rounded-lg">
+                  <Shield className="h-10 w-10 text-blue-600 mx-auto mb-2" />
+                  <div className="text-gray-900 font-semibold">Federal Safety Certified</div>
+                </div>
+                <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <CheckCircle className="h-10 w-10 text-green-600 mx-auto mb-2" />
+                  <div className="text-gray-900 font-semibold">Professionally Cleaned</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 bg-blue-600">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10 text-center">
