@@ -15,22 +15,22 @@
 1. **Travel Freedom Section**
    - Expected: Family walking with luggage (2 adults, 2 kids)
    - Image URL: planet-pdp_jpg.webp (despite the filename, this contains the family walking image)
-   - Status: TO BE TESTED
+   - Status: ✅ PASSED - Image displays correctly showing happy family with luggage and teal car seat bag
 
 2. **Our Mission Section**
    - Expected: Family at airport terminal
    - Image URL: our_mission.webp
-   - Status: TO BE TESTED
+   - Status: ✅ PASSED - Image displays correctly showing family (father, mother, toddler in pink) at airport terminal
 
 3. **Portability Section**
    - Expected: Woman carrying Pico car seat on street
    - Image URL: stardust-extra-1.webp
-   - Status: TO BE TESTED
+   - Status: ✅ PASSED - Image displays correctly showing stylish woman in dark coat carrying white/cream car seat
 
 4. **Safety Section**
    - Expected: Mother with child in WAYB car seat
    - Image URL: gh-extra-2.webp (despite the filename, this contains the car seat image)
-   - Status: TO BE TESTED
+   - Status: ✅ PASSED - Image displays correctly showing smiling mother with pink cardigan and happy child in orange WAYB car seat
 
 ### Previous Testing Notes
 - All mock data is working correctly
