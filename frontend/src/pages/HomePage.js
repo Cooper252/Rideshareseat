@@ -398,8 +398,8 @@ const HomePage = () => {
               <CardContent className="p-8">
                 <div className="space-y-4">
                   <div className="flex justify-between items-center py-3 border-b border-green-200">
-                    <span className="text-lg font-medium font-body">Wayb Pico Rental ($14.95/day × 3)</span>
-                    <span className="text-lg font-bold">$44.85</span>
+                    <span className="text-lg font-medium font-body">Ridesafer Vest Rental ($9.95/day × 3)</span>
+                    <span className="text-lg font-bold">$29.85</span>
                   </div>
                   <div className="flex justify-between items-center py-3 border-b border-green-200">
                     <span className="text-lg font-medium font-body">Cleaning Fee (one-time)</span>
@@ -412,7 +412,7 @@ const HomePage = () => {
                   <div className="py-8"></div> {/* Spacer to align with the other card */}
                   <div className="flex justify-between items-center py-6 bg-green-100 rounded-lg px-4 mt-6">
                     <span className="text-2xl font-bold font-heading text-green-800">Total Cost:</span>
-                    <span className="text-3xl font-bold text-green-600">$232.80</span>
+                    <span className="text-3xl font-bold text-green-600">$217.80</span>
                   </div>
                 </div>
               </CardContent>
@@ -425,9 +425,9 @@ const HomePage = () => {
               <div className="bg-white rounded-lg p-8">
                 <h3 className="text-4xl font-bold font-heading text-gray-900 mb-4">You Save</h3>
                 <div className="text-6xl font-bold text-green-600 mb-4">
-                  $346.75
+                  $361.75
                 </div>
-                <p className="text-2xl text-gray-600 font-body">That's a 60% savings on your family travel costs!</p>
+                <p className="text-2xl text-gray-600 font-body">That's a 62% savings on your family travel costs!</p>
               </div>
             </div>
           </div>
