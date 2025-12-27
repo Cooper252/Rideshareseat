@@ -286,8 +286,8 @@ const HomePage = () => {
             <div className="mt-12 lg:mt-0">
               <div className="relative">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_0658cab3-6d1c-40bf-afed-bf663411f0ef/artifacts/zgle78va_gh-extra-2.webp" 
-                  alt="Family traveling with portable car seats"
+                  src="https://customer-assets.emergentagent.com/job_0658cab3-6d1c-40bf-afed-bf663411f0ef/artifacts/7l1sead5_planet-pdp_jpg.webp" 
+                  alt="Happy family traveling with luggage and car seats"
                   className="rounded-lg shadow-xl"
                 />
               </div>
@@ -304,7 +304,7 @@ const HomePage = () => {
               <div className="relative">
                 <img 
                   src="https://customer-assets.emergentagent.com/job_0658cab3-6d1c-40bf-afed-bf663411f0ef/artifacts/lwsn3i5m_our_mission.webp" 
-                  alt="Happy family at airport"
+                  alt="Family walking at airport"
                   className="rounded-lg shadow-xl"
                 />
               </div>
