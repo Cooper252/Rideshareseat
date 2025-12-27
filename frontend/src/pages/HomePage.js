@@ -714,8 +714,8 @@ const HomePage = () => {
             <div className="mb-12 lg:mb-0">
               <div className="relative">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_0658cab3-6d1c-40bf-afed-bf663411f0ef/artifacts/7l1sead5_planet-pdp_jpg.webp" 
-                  alt="Happy child safely secured in car seat"
+                  src="https://customer-assets.emergentagent.com/job_0658cab3-6d1c-40bf-afed-bf663411f0ef/artifacts/zgle78va_gh-extra-2.webp" 
+                  alt="Happy child safely secured in car seat with mother"
                   className="rounded-lg shadow-xl"
                 />
               </div>
