@@ -286,7 +286,7 @@ const HomePage = () => {
             <div className="mt-12 lg:mt-0">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=600&h=400&fit=crop" 
+                  src="https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/lxqxzqzi_gh-extra-2.webp" 
                   alt="Family with car seat"
                   className="rounded-lg shadow-xl"
                 />
