@@ -601,7 +601,7 @@ const HomePage = () => {
 
           <div className="text-center mt-12">
             <p className="text-lg text-gray-600 mb-4">
-              <strong>Example:</strong> 3-day Wayb Pico rental = $52.80 total ($14.95 × 3 days + $7.95 cleaning fee)
+              <strong>Example:</strong> 3-day Ridesafer Vest rental = $37.80 total ($9.95 × 3 days + $7.95 cleaning fee)
             </p>
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
               <Link to="/book">Calculate Your Cost</Link>
