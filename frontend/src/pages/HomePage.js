@@ -286,10 +286,50 @@ const HomePage = () => {
             <div className="mt-12 lg:mt-0">
               <div className="relative">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_ride-seat-buddy/artifacts/lxqxzqzi_gh-extra-2.webp" 
-                  alt="Family with car seat"
+                  src="https://customer-assets.emergentagent.com/job_0658cab3-6d1c-40bf-afed-bf663411f0ef/artifacts/zgle78va_gh-extra-2.webp" 
+                  alt="Family traveling with portable car seats"
                   className="rounded-lg shadow-xl"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Mission Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+            <div className="mb-12 lg:mb-0">
+              <div className="relative">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_0658cab3-6d1c-40bf-afed-bf663411f0ef/artifacts/lwsn3i5m_our_mission.webp" 
+                  alt="Happy family at airport"
+                  className="rounded-lg shadow-xl"
+                />
+              </div>
+            </div>
+            
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold font-heading text-gray-900 mb-6">
+                Our Mission: Stress-Free Family Travel
+              </h2>
+              <p className="text-xl text-gray-600 mb-6 font-body">
+                We believe family travel should be about making memories, not managing logistics. That's why we created RideShare Seat — to give parents the freedom to explore without the burden of bulky equipment.
+              </p>
+              <p className="text-xl text-gray-600 mb-8 font-body">
+                Our premium, safety-certified car seats install in under 30 seconds and fit perfectly in any rideshare, taxi, or rental car — so you can focus on what matters most: your family.
+              </p>
+              
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center p-4 bg-blue-50 rounded-lg">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">30 sec</div>
+                  <div className="text-gray-600">Quick Install</div>
+                </div>
+                <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-3xl font-bold text-green-600 mb-2">100%</div>
+                  <div className="text-gray-600">Safety Certified</div>
+                </div>
               </div>
             </div>
           </div>
