@@ -12,7 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { useAuth } from '../context/AuthContext';
 import { mockLocations, mockSeatTypes, calculateTotal, generateBookingId, simulateAPICall } from '../mock';
 import { format, differenceInDays, addDays } from 'date-fns';
-import { CalendarIcon, MapPin, Car, Users, Clock, DollarSign, CheckCircle, AlertCircle } from 'lucide-react';
+import { CalendarIcon, MapPin, Car, Users, Clock, DollarSign, CheckCircle, AlertCircle, Info } from 'lucide-react';
 import { toast } from 'sonner';
 
 const BookingPage = () => {
