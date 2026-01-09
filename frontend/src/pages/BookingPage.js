@@ -136,6 +136,16 @@ const BookingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-blue-50 to-yellow-50 py-12">
       <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-10">
+        {/* Disclaimer Banner */}
+        <div className="mb-8 p-4 bg-amber-50 border-2 border-amber-300 rounded-lg shadow-sm">
+          <div className="flex items-center justify-center gap-3">
+            <Info className="h-6 w-6 text-amber-600 flex-shrink-0" />
+            <p className="text-amber-800 font-medium text-center">
+              <strong>Demo Website:</strong> This site is for illustration purposes only. Bookings cannot be completed and no actual rentals are available at this time.
+            </p>
+          </div>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Book Your Car Seat</h1>
