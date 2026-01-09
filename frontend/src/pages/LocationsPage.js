@@ -4,7 +4,7 @@ import { Badge } from '../components/ui/badge';
 import { Input } from '../components/ui/input';
 import { Button } from '../components/ui/button';
 import { mockLocations } from '../mock';
-import { MapPin, Clock, Car, Search, CheckCircle, XCircle, Phone } from 'lucide-react';
+import { MapPin, Clock, Car, Search, CheckCircle, XCircle, Phone, Info } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const LocationsPage = () => {
@@ -26,6 +26,16 @@ const LocationsPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Disclaimer Banner */}
+        <div className="mb-8 p-4 bg-amber-50 border-2 border-amber-300 rounded-lg shadow-sm">
+          <div className="flex items-center justify-center gap-3">
+            <Info className="h-6 w-6 text-amber-600 flex-shrink-0" />
+            <p className="text-amber-800 font-medium text-center">
+              <strong>Demo Website:</strong> This site is for illustration purposes only. These locations are examples and no actual kiosks are available at this time.
+            </p>
+          </div>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Locations</h1>
